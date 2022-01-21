@@ -102,7 +102,7 @@ hr {
 @font-face {
   font-family: 'Museo';
   src: url("../fonts/museo/Museo-700.woff2") format("woff2"), url("../fonts/museo/Museo-700.woff") format("woff");
-  font-weight: bold;
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
@@ -1128,50 +1128,59 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .recetas {
   padding: 5rem;
 }
+/* line 5, ../scss/components/_layout.scss */
+.recetas h1 {
+  text-align: center;
+  font-family: "Museo", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 22px;
+  margin-bottom: 7rem;
+}
 
-/* line 6, ../scss/components/_layout.scss */
+/* line 15, ../scss/components/_layout.scss */
 .recetas__lista {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* line 13, ../scss/components/_layout.scss */
+/* line 22, ../scss/components/_layout.scss */
 .nueva .receta__header-nuevo {
   display: block;
 }
 
-/* line 19, ../scss/components/_layout.scss */
+/* line 28, ../scss/components/_layout.scss */
 .save .receta__content-save {
   display: block;
 }
-/* line 23, ../scss/components/_layout.scss */
+/* line 32, ../scss/components/_layout.scss */
 .save .receta__content-nosave {
   display: none;
 }
 
-/* line 29, ../scss/components/_layout.scss */
+/* line 38, ../scss/components/_layout.scss */
 .nosave .receta__content-save {
   display: none;
 }
-/* line 33, ../scss/components/_layout.scss */
+/* line 42, ../scss/components/_layout.scss */
 .nosave .receta__content-nosave {
   display: block;
 }
 
-/* line 38, ../scss/components/_layout.scss */
+/* line 47, ../scss/components/_layout.scss */
 .receta {
-  border: solid 1px #000000;
+  border: solid 1px #999999;
   height: 400px;
   margin: 1.2rem;
   padding: 1.6rem 1.7rem;
   width: 256px;
 }
-/* line 45, ../scss/components/_layout.scss */
+/* line 54, ../scss/components/_layout.scss */
 .receta__header {
   margin-bottom: 1rem;
 }
-/* line 49, ../scss/components/_layout.scss */
+/* line 58, ../scss/components/_layout.scss */
 .receta__header-nuevo {
   border-radius: 2rem;
   background: #eeeeee;
@@ -1183,16 +1192,16 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   padding: .2rem 2rem;
   position: absolute;
 }
-/* line 61, ../scss/components/_layout.scss */
+/* line 70, ../scss/components/_layout.scss */
 .receta__header-lock, .receta__header-play {
   color: #F3C450;
   position: absolute;
 }
-/* line 67, ../scss/components/_layout.scss */
+/* line 76, ../scss/components/_layout.scss */
 .receta__header img {
   object-fit: cover;
 }
-/* line 72, ../scss/components/_layout.scss */
+/* line 81, ../scss/components/_layout.scss */
 .receta__content {
   background: #F3EEE8;
   display: flex;
@@ -1202,28 +1211,28 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   padding: 1.2rem;
   width: 22.4rem;
 }
-/* line 81, ../scss/components/_layout.scss */
+/* line 90, ../scss/components/_layout.scss */
 .receta__content-title {
   display: flex;
   justify-content: space-between;
 }
-/* line 85, ../scss/components/_layout.scss */
+/* line 94, ../scss/components/_layout.scss */
 .receta__content-title p {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 20px;
 }
-/* line 92, ../scss/components/_layout.scss */
+/* line 101, ../scss/components/_layout.scss */
 .receta__content-save, .receta__content-nosave {
   color: #F3C450;
 }
-/* line 97, ../scss/components/_layout.scss */
+/* line 106, ../scss/components/_layout.scss */
 .receta__content-nombre {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 22px;
 }
-/* line 103, ../scss/components/_layout.scss */
+/* line 112, ../scss/components/_layout.scss */
 .receta__content a {
   color: #F3C450;
   font-size: 1.6rem;

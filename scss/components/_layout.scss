@@ -1,6 +1,15 @@
 
 .recetas {
     padding: 5rem;
+
+    h1 {
+        text-align: center;
+        font-family: $font-secondary;
+        font-size: map-get($sizes, "medium");
+        font-weight: map-get($weights, "extra_bold");
+        line-height: 22px;
+        margin-bottom: 7rem;
+    }
 }
 
 .recetas__lista {
@@ -36,7 +45,7 @@
 }
 
 .receta {
-    border: solid 1px color(grayscale, black);
+    border: solid 1px color(grayscale, gray-4);
     height: 400px;
     margin: 1.2rem;
     padding: 1.6rem 1.7rem;
