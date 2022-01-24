@@ -1,6 +1,6 @@
 
 .recetas {
-    padding: 5rem;
+    padding: 7rem 2.3rem;
 
     h1 {
         text-align: center;
@@ -8,7 +8,7 @@
         font-size: map-get($sizes, "medium");
         font-weight: map-get($weights, "extra_bold");
         line-height: 22px;
-        margin-bottom: 7rem;
+        margin-bottom: 6rem;
     }
 }
 
@@ -18,12 +18,15 @@
     justify-content: center;
 }
 
+// receta con etiqueta nueva
 .nueva {
     .receta__header-nuevo {
         display: block;
+        z-index: 1;
     }
 }
 
+// receta que está guardada
 .save {
     .receta__content-save {
         display: block;
@@ -34,6 +37,7 @@
     }
 }
 
+// receta que no está guardada
 .nosave {
     .receta__content-save {
         display: none;
@@ -41,6 +45,19 @@
 
     .receta__content-nosave {
         display: block;
+    }
+}
+
+// receta bloqueada
+.lock{
+    img {
+        filter:brightness(50%);
+    }
+    .receta__header-options {
+        .receta__header-lock,
+        .receta__header-play {
+            display: block;
+        }
     }
 }
 
@@ -53,7 +70,7 @@
 
     &__header{
 
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
 
         &-nuevo {
             border-radius: 2rem;
@@ -67,9 +84,26 @@
             position: absolute;
         }
 
+        &-options {
+            position: relative;
+            top: -10rem;
+            left: 10rem;
+        }
+
+        &-lock {
+            top: -3rem;
+        }
+
+        &-play {
+            right: 11rem;
+            top: 3rem;
+        }
+
         &-lock,
         &-play {
             color: color(primary, dark);
+            display: none;
+            font-size: map-get($sizes, "slarge");
             position: absolute;
         }
 
@@ -82,7 +116,7 @@
         background: color(primary, light);
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         height: 159px;
         padding: 1.2rem;
         width: 22.4rem;
@@ -101,6 +135,7 @@
         &-save,
         &-nosave {
             color: color(primary, dark);
+            font-size: map-get($sizes, shalf)
         }
 
         &-nombre {
@@ -117,4 +152,11 @@
         }
     }
     
+}
+
+@include  mq-min(xl){
+
+    .recetas {
+        padding: 7rem 20rem;
+    }
 }

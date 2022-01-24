@@ -1126,7 +1126,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 
 /* line 2, ../scss/components/_layout.scss */
 .recetas {
-  padding: 5rem;
+  padding: 7rem 2.3rem;
 }
 /* line 5, ../scss/components/_layout.scss */
 .recetas h1 {
@@ -1135,7 +1135,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   font-size: 3.2rem;
   font-weight: 800;
   line-height: 22px;
-  margin-bottom: 7rem;
+  margin-bottom: 6rem;
 }
 
 /* line 15, ../scss/components/_layout.scss */
@@ -1145,30 +1145,41 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   justify-content: center;
 }
 
-/* line 22, ../scss/components/_layout.scss */
+/* line 23, ../scss/components/_layout.scss */
 .nueva .receta__header-nuevo {
   display: block;
+  z-index: 1;
 }
 
-/* line 28, ../scss/components/_layout.scss */
+/* line 31, ../scss/components/_layout.scss */
 .save .receta__content-save {
   display: block;
 }
-/* line 32, ../scss/components/_layout.scss */
+/* line 35, ../scss/components/_layout.scss */
 .save .receta__content-nosave {
   display: none;
 }
 
-/* line 38, ../scss/components/_layout.scss */
+/* line 42, ../scss/components/_layout.scss */
 .nosave .receta__content-save {
   display: none;
 }
-/* line 42, ../scss/components/_layout.scss */
+/* line 46, ../scss/components/_layout.scss */
 .nosave .receta__content-nosave {
   display: block;
 }
 
-/* line 47, ../scss/components/_layout.scss */
+/* line 53, ../scss/components/_layout.scss */
+.lock img {
+  filter: brightness(50%);
+}
+/* line 57, ../scss/components/_layout.scss */
+.lock .receta__header-options .receta__header-lock,
+.lock .receta__header-options .receta__header-play {
+  display: block;
+}
+
+/* line 64, ../scss/components/_layout.scss */
 .receta {
   border: solid 1px #999999;
   height: 400px;
@@ -1176,11 +1187,11 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   padding: 1.6rem 1.7rem;
   width: 256px;
 }
-/* line 54, ../scss/components/_layout.scss */
+/* line 71, ../scss/components/_layout.scss */
 .receta__header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
-/* line 58, ../scss/components/_layout.scss */
+/* line 75, ../scss/components/_layout.scss */
 .receta__header-nuevo {
   border-radius: 2rem;
   background: #eeeeee;
@@ -1192,50 +1203,75 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   padding: .2rem 2rem;
   position: absolute;
 }
-/* line 70, ../scss/components/_layout.scss */
+/* line 87, ../scss/components/_layout.scss */
+.receta__header-options {
+  position: relative;
+  top: -10rem;
+  left: 10rem;
+}
+/* line 93, ../scss/components/_layout.scss */
+.receta__header-lock {
+  top: -3rem;
+}
+/* line 97, ../scss/components/_layout.scss */
+.receta__header-play {
+  right: 11rem;
+  top: 3rem;
+}
+/* line 102, ../scss/components/_layout.scss */
 .receta__header-lock, .receta__header-play {
   color: #F3C450;
+  display: none;
+  font-size: 4.38rem;
   position: absolute;
 }
-/* line 76, ../scss/components/_layout.scss */
+/* line 110, ../scss/components/_layout.scss */
 .receta__header img {
   object-fit: cover;
 }
-/* line 81, ../scss/components/_layout.scss */
+/* line 115, ../scss/components/_layout.scss */
 .receta__content {
   background: #F3EEE8;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 159px;
   padding: 1.2rem;
   width: 22.4rem;
 }
-/* line 90, ../scss/components/_layout.scss */
+/* line 124, ../scss/components/_layout.scss */
 .receta__content-title {
   display: flex;
   justify-content: space-between;
 }
-/* line 94, ../scss/components/_layout.scss */
+/* line 128, ../scss/components/_layout.scss */
 .receta__content-title p {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 20px;
 }
-/* line 101, ../scss/components/_layout.scss */
+/* line 135, ../scss/components/_layout.scss */
 .receta__content-save, .receta__content-nosave {
   color: #F3C450;
+  font-size: 2rem;
 }
-/* line 106, ../scss/components/_layout.scss */
+/* line 141, ../scss/components/_layout.scss */
 .receta__content-nombre {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 22px;
 }
-/* line 112, ../scss/components/_layout.scss */
+/* line 147, ../scss/components/_layout.scss */
 .receta__content a {
   color: #F3C450;
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 24px;
+}
+
+@media (min-width: 1140px) {
+  /* line 159, ../scss/components/_layout.scss */
+  .recetas {
+    padding: 7rem 20rem;
+  }
 }
